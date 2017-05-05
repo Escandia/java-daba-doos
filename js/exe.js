@@ -1,15 +1,10 @@
-window.onload = function() {
-               document.formclave.onsubmit = acceso;
-           }
-           function acceso(){
-               alert(document.formclave.clave.value);
-           }
-
-
 var min = 1;
 var max = 100;
 var chances = 0;
 var random = Math.floor(Math.random() * max - min + 1) + min;
+
+
+
 
 function gameNumber(){
 
@@ -29,6 +24,20 @@ function gameNumber(){
    textError.innerHTML = "Introduce un número valido, Neandertal!!.";
  }
 }
+
+var inputEnter = document.querySelector("#number");
+
+function onKeyPress(event){
+    if(event.charCode === 13){
+        gameNumber();
+    }
+}
+
+inputEnter.addEventListener("keypress", onKeyPress);
+
+
+
+
 
 // function validar(e){
 //   var tecla = (document.all) ? e.keyCode : e.which;

@@ -6,10 +6,8 @@
     <title>Java-daba-doos</title>
     <link rel="shortcut icon" href="img/LOGO.png">
     <link href="https://fonts.googleapis.com/css?family=Caesar+Dressing|Roboto+Condensed" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/master.css">
-
-    <script src="js/exe.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/master.css">
   </head>
 
   <body>
@@ -23,22 +21,21 @@
     <div class="container">
       <h1>Juego de adivinar el número</h1>
 
-    <form class="fieldset" action="index.html" method="post">
+      <div class="fieldset">
+        <label class="">Escribe un numero entre el 1 y el 100</label>
+        <br>
+        <br>
+          <input class="input" type="number" name="number" value="" id="number">
+          <button id="button" class="button" type="button" name="button" onclick= "gameNumber()">¡Dale caña!</button>
+          <p class="textError" id="textError" ></p>
+          <audio id="audioJava" src="audio/audio.mp3" ></audio>
+      
 
-
-            <label class="text-1-100">Escribe un numero entre el 1 y el 100</label>
-            <br>
-            <br>
-              <input class="input" type="number" name="number" value="" id= "number">
-              <button id="button" class="button" type="button" name="button" onclick= "gameNumber()">¡Dale caña!</button>
-              <p class="textError" id="textError" ></p>
-              <audio id="audioJava" src="audio/audio.mp3" ></audio>
-
-    </form>
-
+      </div>
+        
     </div>
 
   <footer><label for="">Desarrollado por las Java-daba-dooS team para el segundo sprint by <a href="http://adalab.es/">Adalab</a></label></footer>
-
+      <script src="js/exe.js" charset="utf-8"></script>
   </body>
 </html>
