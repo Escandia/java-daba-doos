@@ -3,9 +3,6 @@ var max = 100;
 var chances = 0;
 var random = Math.floor(Math.random() * max - min + 1) + min;
 
-
-
-
 function gameNumber(){
 
  var numberInput=document.getElementById("number").value;
@@ -34,14 +31,3 @@ function onKeyPress(event){
 }
 
 inputEnter.addEventListener("keypress", onKeyPress);
-
-
-
-
-
-// function validar(e){
-//   var tecla = (document.all) ? e.keyCode : e.which;
-//   if (tecla == 13){
-//   gameNumber();
-//   }
-// }
