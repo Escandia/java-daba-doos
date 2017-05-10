@@ -90,7 +90,10 @@ function compare(variable){
     oneScore.innerHTML = win;
     if (correctCouple === 3) {
       var modal = document.querySelector(".modal");
+      var textModal = document.querySelector(".score-game2");
+      document.getElementById('audioJava').play();
       modal.style.display = "flex";
+      textModal.innerHTML = "¡Genial! Tu puntuación final son " + score + " puntos";
     }
   }else{
     returnCards[0].style.transform="rotateY(360deg)";
@@ -106,4 +109,15 @@ function compare(variable){
   variable.splice(0,2);
   tirada=0;
   returnCards.splice(0,2);
+}
+
+// JS button popUp
+var restart = document.querySelector("#domInst");
+var popUp = document.querySelector(".pop-up");
+restart.onclick = function(){
+    popUp.style.display = "flex";
+}
+var span = document.getElementById("close");
+span.onclick = function(){
+  popUp.style.display = "none";
 }

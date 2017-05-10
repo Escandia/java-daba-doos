@@ -6,19 +6,36 @@ var random = Math.floor(Math.random() * max - min) + min;
 function gameNumber(){
 
  var numberInput=document.querySelector("#number").value;
+ var text = document.querySelector("#textError");
  chances = chances + 1;
 
  if (numberInput >= min && numberInput <= max ) {
      if (numberInput < random) {
        textError.innerHTML = "Sube al glaciar";
+       if (text.classList.contains("fade-in")) {
+        text.className = "fade-in2";
+       }else{
+       text.className = "fade-in";}
      } else if (numberInput > random){
        textError.innerHTML = "Baja a la caverna";
+       if (text.classList.contains("fade-in")) {
+        text.className = "fade-in2";
+       }else{
+       text.className = "fade-in";}
      } else {
-       textError.innerHTML = "Correcto has acertado!! Con " + chances + " intentos";
+       textError.innerHTML = "¡Correcto! ¡Has acertado! Con " + chances + " intentos";
        document.getElementById('audioJava').play();
+       var modal = document.querySelector(".modal");
+       var textModal = document.querySelector(".score-game1");
+       modal.style.display = "flex";
+       textModal.innerHTML = "¡Correcto! ¡Has acertado! Con " + chances + " intentos";
      }
  } else {
    textError.innerHTML = "Introduce un número valido, ¡Neandertal!";
+   if (text.classList.contains("fade-in")) {
+    text.className = "fade-in2";
+   }else{
+   text.className = "fade-in";}
  }
 }
 
@@ -30,15 +47,15 @@ function onKeyPress(event){
   }
 }
 
-function fade(button) {
-  if (button.value === "FadeOut") {
-    document.querySelector("#textError").className = "fade-out";
-    button.value = "FadeIn";
-  }
-  else{
-    document.querySelector("#textError").className = "fade-in";
-    button.value = "FadeOut";
-  }
-}
-
 inputEnter.addEventListener("keypress", onKeyPress);
+
+// JS button popUp
+var restart = document.querySelector("#domInst");
+var popUp = document.querySelector(".pop-up");
+restart.onclick = function(){
+    popUp.style.display = "flex";
+}
+var span = document.getElementById("close");
+span.onclick = function(){
+  popUp.style.display = "none";
+}

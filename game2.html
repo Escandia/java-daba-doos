@@ -83,12 +83,18 @@
           <div class="total-score margin-bottom">
             <p class="score-text">0</p>
           </div>
-          <div class="total-score">
+          <div class="total-score margin-bottom">
             <h3 class="score-title">Puntuación total</p>
             <p class="total-score-text">0</p>
           </div>
+          <div class="watchInst" id="domInst">
+            <img src="img/instrucciones.png" alt="">
+            <p>Instrucciones</p>
+          </div>
         </div>
       </div>
+
+      <audio id="audioJava" src="audio/audio.mp3"></audio>
 
     </main>
 
@@ -99,6 +105,7 @@
         </div>
         <div class="modal-text">
           <h4 class="congrats">¡Has ganado!</h4>
+          <p class="score-game2"></p>
           <div class="buttons">
             <div class="reset">
               <a href="game2.html">
@@ -122,6 +129,23 @@
         Desarrollado por Java-daba-dooS team para el II spring de <a class="footer-link" href="http://adalab.es/" target="_blank">Adalab</a>
       </p>
     </footer>
+
+    <div class="pop-up">
+      <div class="window">
+       <p class="instructions">Instrucciones</p>
+       <p class="rules">Reglas:</p>
+       <div class="containerRules">
+         <p>1. Elige una primera carta al azar</p>
+         <p>2. Selecciona una segunda carta al azar </p>
+         <p>3. Si ambas cartas no son iguales regresaran a su posicion inicial</p>
+         <p>4. Y deberas escoger de nuevo dos cartas que hagan MATCH </p>
+         <p>¡Suerte!</p>
+       </div>
+       <div class="buttonInstructions" id="button-instructions">
+         <p class="button1" id="close">Let's Daba-do-it!</p>
+       </div>
+      </div>
+    </div>
 
     <script src="scripts/game2.js" charset="utf-8"></script>
 

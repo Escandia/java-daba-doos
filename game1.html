@@ -26,12 +26,42 @@
             <label>Escribe un numero entre el 1 y cachichien (99)</label>
           </div>
           <input class="input" id="number" type="number" name="number" value="" class="menuNumbers">
-          <button id="button" class="button" type="button" name="button" value="FadeIn" onclick="gameNumber();fade(button)">¡Dale caña!</button>
+          <button id="button" class="button" type="button" name="button" value="FadeIn" onclick="gameNumber()">¡Dale caña!</button>
           <p class="textError" id="textError">¿Acertarás a la primera?</p>
           <audio id="audioJava" src="audio/audio.mp3"></audio>
         </div>
       </div>
+      <div class="watchInst" id="domInst">
+        <img src="img/instrucciones.png" alt="">
+        <p>Instrucciones</p>
+      </div>
     </main>
+
+    <div class="modal">
+      <div class="win">
+        <div class="dino">
+          <img class="dino-gif" src="img/bilma.gif" alt="">
+        </div>
+        <div class="modal-text">
+          <h4 class="congrats">¡Has ganado!</h4>
+          <p class="score-game1"></p>
+          <div class="buttons">
+            <div class="reset">
+              <a href="game1.html">
+                <img src="img/reset.png" alt="">
+                <p>¡Quiero otra!</p>
+              </a>
+            </div>
+            <div class="reset">
+              <a href="index.html">
+                <img src="img/menu.png" alt="">
+                <p>Menu</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="footer">
       <p class="copyright">
@@ -39,23 +69,22 @@
       </p>
     </footer>
 
-    <!-- <div class="pop-up">
+    <div class="pop-up">
       <div class="window">
         <p class="instructions">Instrucciones</p>
         <p class="rules">Reglas:</p>
         <div class="containerRules">
-         <p class="poprInstr">1. Elige un número al azar</p>
-         <p class="poprInstr">2. Averigua si el número que has introducido es correcto, por nuestras pistas</p>
-         <p class="poprInstr">3. Si es erroneo intentalo otra vez</p>
-         <p class="poprInstr">4.¡Suerte!</p>
+         <p class="poprInstr">1. Elige una primera carta al azar</p>
+         <p class="poprInstr">2. Selecciona una segunda carta al azar</p>
+         <p class="poprInstr">3. Si ambas cartas no son iguales regresaran a su posicion inicial</p>
+         <p class="poprInstr">4. Y deberas escoger de nuevo dos cartas que hagan MATCH </p>
+         <p class="poprInstr">¡Suerte!</p>
         </div>
-        <div class="button-instructions">
-          <a class="button1" href="#">
-            <p>Let's Daba-do-it!</p>
-          </a>
+        <div class="buttonInstructions" id="button-instructions">
+            <p class="button1" id="close">Let's Daba-do-it!</p>
         </div>
       </div>
-    </div> -->
+    </div>
 
     <script src="scripts/game1.js" charset="utf-8"></script>
 

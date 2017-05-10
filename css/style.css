@@ -61,10 +61,11 @@ a{
 }
 
 .footer-link{
-  color: rgba(0,0,0,0.6);
+  text-decoration: underline;
+  color: black;
   transition: all 0.5s;
 }
 
 .footer-link:hover{
-  color: rgba(0,0,0,0.3);
+  color: rgba(0,0,0,0.7);
 }
