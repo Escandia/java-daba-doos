@@ -1,76 +1,70 @@
 *{
   box-sizing: border-box;
+  /*transition: all 0.5s;*/
 }
 
 body{
   width: 100%;
   height: 100vh;
-  margin: 0;
-  padding: 0;
-  background-color: #4ABDAC;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-family: 'Roboto Condensed', sans-serif;
-  color: gray;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: gray;
-  width: 100%;
-  height: 50px;
-  padding: 10px;
-}
-
-.logo {
-  width: 120px;
-}
-
-h1 {
-  color: #FC4A1A;
-  text-align: center;
-  font-family: 'Caesar Dressing', cursive;
-  font-size: 3em;
-  margin-top: -50px;
+  background-color: #4ABDAC;
+  margin: 0;
+  font-family: 'Passion One', sans-serif;
+  font-size: 15px;
 }
 
 a{
   text-decoration: none;
-  color: white;
+}
+
+.header{
+  width: 100%;
+  height: 80px;
+  background-color: rgba(255,255,255,0.95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.logo{
+  width: 140px;
 }
 
 .menu{
-  font-size: 30px;
-  margin-right: 20px;
+  color: black;
+  transition: all 0.5s;
+  text-transform: uppercase;
 }
 
-a:hover{
-  color:black;
+.menu:hover{
+  color: rgba(0,0,0,0.5);
 }
 
-.button{
-  border: 5px solid white;
-  background-color: yellow;
-  color: #FC4A1A;;
-  font-size: 30px;
-  font-family: 'Caesar Dressing', cursive;
-}
-form{
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-footer{
-  display: flex;
-  background-color:yellow;
+.main{
   width: 100%;
-  height: 30px;
+}
+
+.footer{
+  background-color: rgba(255,255,0,0.8);
+  width: 100%;
+  height: 40px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px;
+}
 
+.copyright{
+  color: rgba(0,0,0,0.9);
+}
+
+.footer-link{
+  color: rgba(0,0,0,0.6);
+  transition: all 0.5s;
+}
+
+.footer-link:hover{
+  color: rgba(0,0,0,0.3);
 }

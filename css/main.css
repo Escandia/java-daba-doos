@@ -1,0 +1,104 @@
+.menu-main{
+  opacity: 0;
+}
+
+.choose-game{
+  text-align: center;
+  font-family: 'Caesar Dressing';
+  color: white;
+  font-size: 4em;
+  letter-spacing: 3px;
+}
+
+.games{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 60px;
+}
+
+.game{
+  background-color: rgba(255,255,255,0.7);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  color: black;
+}
+
+.game:hover{
+  background-color: rgba(255,255,255,0.9);
+  -webkit-box-shadow: 0px 10px 33px -11px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 33px -11px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 33px -11px rgba(0,0,0,0.75);
+}
+
+.gif{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.img-gif1{
+  width: 180%;
+  position: relative;
+  left: -40px;
+}
+
+.img-gif2{
+  width: 200%;
+  position: relative;
+  left: -55px;
+}
+
+.img-gif3{
+  width: 150%;
+  position: relative;
+  left: -8px;
+}
+
+.text{
+  text-align: center;
+}
+
+.name-game{
+  text-transform: uppercase;
+}
+
+/*MEDIA*/
+
+@media (min-width: 480px) and (max-width: 780px) {
+  .choose-game{
+    font-size: 3em;
+  }
+  .games{
+    padding: 0px;
+  }
+  .game{
+    width: 150px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .choose-game{
+    font-size: 2em;
+  }
+  .game{
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  .gif{
+    width: 80px;
+    height: 80px;
+  }
+}

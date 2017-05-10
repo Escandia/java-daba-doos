@@ -1,0 +1,146 @@
+.title{
+  text-align: center;
+  font-family: 'Caesar Dressing';
+  color: white;
+  font-size: 4em;
+  letter-spacing: 3px;
+  margin: 5px 0;
+}
+
+.game{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.game-cards{
+  background-color: rgba(255,255,255,0.7);
+  width: 600px;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
+.carta{
+  position: relative;
+  width: 124px;
+  height: 188px;
+  margin: 0 10px 5px;
+  transition: all 1s ease;
+	-webkit-transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.carta:hover{
+	/*transform: rotateY(180deg);*/
+}
+
+.cara1, .cara2{
+	position: absolute;
+	-webkit-backface-visibility: hidden;
+  width: 100%;
+  border-radius: 2px;
+  color: white;
+  display: flex;
+  align-items: center;
+
+}
+
+.cara2{
+	transform: rotateY(180deg);
+}
+
+.img-card{
+  width: 100%;
+}
+
+.score{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.total-score{
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 10px;
+  width: 80%;
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Passion One', cursive;
+  text-transform: uppercase;
+}
+
+.score-text{
+  font-size: 30px;
+}
+
+.margin-bottom{
+  margin-bottom: 20px;
+}
+
+/*MODAL*/
+
+.modal{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  align-items: center;
+  justify-content: center;
+  font-family: 'Caesar Dressing';
+  display: none;
+  transition: all 0.5s;
+}
+
+.win{
+  width: 300px;
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.dino{
+  width:20%;
+}
+
+.dino-gif{
+  width: 100%;
+}
+
+.modal-text{
+  width: 60%;
+}
+
+.congrats{
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-around;
+}
+
+.reset{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.reset a{
+  color: black;
+}
+
+.reset img{
+  width: 60px;
+}

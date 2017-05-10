@@ -2,40 +2,63 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport">
-    <title>Java-daba-doos</title>
-    <link rel="shortcut icon" href="img/LOGO.png">
-    <link href="https://fonts.googleapis.com/css?family=Caesar+Dressing|Roboto+Condensed" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Java-daba-dooS</title>
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Caesar+Dressing|Passion+One" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
 
   <body>
-    <header>
-      <img class="logo" src="img/LOGO.png" alt="Logotipo Java-daba-dooS" class="logotype">
-      <ul>
-        <li><a class="menu" href="../index.html"> Menú</a></li>
-      </ul>
+    <header class="header">
+      <a href="index.html">
+        <img class="logo" src="img/logo.png" alt="Logotipo Java-daba-dooS">
+      </a>
+      <a href="index.html" class="menu menu-main">Menu principal</a>
     </header>
 
-    <div class="container">
-      <h1>Juego de adivinar el número</h1>
+    <main class="main">
+      <h1 class="choose-game">Elige un juego</h1>
 
-      <div class="fieldset">
-        <label class="">Escribe un numero entre el 1 y el 100</label>
-        <br>
-        <br>
-          <input class="input" type="number" name="number" value="" id="number">
-          <button id="button" class="button" type="button" name="button" onclick= "gameNumber()">¡Dale caña!</button>
-          <p class="textError" id="textError" ></p>
-          <audio id="audioJava" src="audio/audio.mp3" ></audio>
-      
+      <div class="games">
+        <a href="game1.html" class="game">
+          <div class="gif">
+            <img class="img-gif1" src="img/games/game1.gif" alt="animacion juego 1">
+          </div>
+          <div class="text">
+            <h2 class="name-game">Bronto-número</h2>
+            <p>Adivina un número de 1 a 100 con nuestras roca pistas</p>
+          </div>
+        </a>
 
+        <a href="game2.html" class="game">
+          <div class="gif">
+            <img class="img-gif2" src="img/games/game2.gif" alt="animacion juego 1">
+          </div>
+          <div class="text">
+            <h2 class="name-game">Dino-Parejas</h2>
+            <p>Ayuda a estas cavernicolas a encontrar su pareja</p>
+          </div>
+        </a>
+
+        <a href="game3.html" class="game">
+          <div class="gif">
+            <img class="img-gif3" src="img/games/game3.gif" alt="animacion juego 1">
+          </div>
+          <div class="text">
+            <h2 class="name-game">¡Sorpresa!</h2>
+            <p>Retrocede a la prehistoria de los videojuegos</p>
+          </div>
+        </a>
       </div>
-        
-    </div>
+    </main>
 
-  <footer><label for="">Desarrollado por las Java-daba-dooS team para el segundo sprint by <a href="http://adalab.es/">Adalab</a></label></footer>
-      <script src="js/exe.js" charset="utf-8"></script>
+    <footer class="footer">
+      <p class="copyright">
+        Desarrollado por Java-daba-dooS team para el II spring de <a class="footer-link" href="http://adalab.es/" target="_blank">Adalab</a>
+      </p>
+    </footer>
+
   </body>
 </html>
