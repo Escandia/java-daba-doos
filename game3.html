@@ -22,17 +22,71 @@
       <h1 class="title">¡Sopresa!</h1>
 
       <div class="game">
+        <label for="" class="margin-bottom">¿Cuál es el nombre de variable favorita de las adalabers?</label>
+        <input id="favourite-variable" type="text" name="" value="" placeholder="Es un nombre de hombre..." class="margin-bottom">
+        <label for="" class="margin-bottom">¿Cuál es el número para entrar en La Terminal?</label>
+        <input id="number-terminal" type="number" name="" value="" placeholder="¡Venga! Que lo usáis todos los días ;)" class="margin-bottom">
+        <label for="" class="margin-bottom">¿Cuál es el sabor de batido favorito de las adalabers?</label>
+        <input id="favourite-smoothie" type="text" name="" value="" placeholder="Que rico estaba :P" class="margin-bottom">
+        <button id="button" class="button-submit" type="button" name="button" onclick="validate()">¡Dale caña!</button>
+      </div>
+
+      <div class="watchInst" id="domInst">
+        <img src="img/instrucciones.png" alt="">
+        <p>Instrucciones</p>
       </div>
 
       <audio id="audioJava" src="audio/audio.mp3"></audio>
 
     </main>
 
+    <div class="modal">
+      <div class="win">
+        <div class="dino">
+          <img class="dino-gif" src="img/pablo.gif" alt="">
+        </div>
+        <div class="modal-text">
+          <h4 class="congrats">¡Has ganado!</h4>
+          <p class="score-game3"></p>
+          <div class="buttons">
+            <div class="reset">
+              <a href="game3.html">
+                <img src="img/reset.png" alt="">
+                <p>¡Quiero otra!</p>
+              </a>
+            </div>
+            <div class="reset">
+              <a href="index.html">
+                <img src="img/menu.png" alt="">
+                <p>Menu</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer class="footer">
       <p class="copyright">
         Desarrollado por Java-daba-dooS team para el II spring de <a class="footer-link" href="http://adalab.es/" target="_blank">Adalab</a>
       </p>
     </footer>
+
+    <div class="pop-up">
+      <div class="window">
+       <p class="instructions">Instrucciones</p>
+       <p class="rules">Reglas:</p>
+       <div class="containerRules">
+         <p>1. Responde a todas preguntas</p>
+         <p>2. Haz click en ¡Dale caña!</p>
+         <p>3. Si has fallado alguna pregunta, inténtalo de nuevo</p>
+         <p>¡Suerte!</p>
+       </div>
+       <div class="buttonInstructions" id="button-instructions">
+         <p class="button1" id="close">Let's Daba-do-it!</p>
+       </div>
+      </div>
+    </div>
 
     <script src="scripts/game3.js" charset="utf-8"></script>
 

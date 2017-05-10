@@ -33,10 +33,11 @@ function gameNumber(){
  } else {
    textError.innerHTML = "Introduce un número valido, ¡Neandertal!";
    if (text.classList.contains("fade-in")) {
-    text.className = "fade-in2";
+     text.className = "fade-in2";
    }else{
-   text.className = "fade-in";}
- }
+     text.className = "fade-in";
+   }
+  }
 }
 
 var inputEnter = document.querySelector("#number");
