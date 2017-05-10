@@ -49,7 +49,7 @@ shuffle(choosenCards);
 //Asignar a cada div su cara
 var faceCardOne = document.querySelectorAll(".front");
 for (var j=0; j<faceCardOne.length; j++){
-  var urlCard = "../img/cards/"+choosenCards[j]+".png";
+  var urlCard = "./img/cards/"+choosenCards[j]+".png";
   faceCardOne[j].setAttribute("src", urlCard);
 }
 
@@ -58,17 +58,14 @@ var upCards = [];
 var returnCards = [];
 var tirada = 0;
 function rotate(event){
-  console.log(this);
-  this.style.transform = "rotateY(180deg)";
-  returnCards.push(this);
-  var sourceCurrentCardFace = this.children[1].children[0].getAttribute("src");
-  upCards.push(sourceCurrentCardFace[13]);
+  event.target.parentElement.parentElement.style.transform = "rotateY(180deg)";
+  returnCards.push(event.target.parentElement.parentElement);
+  var sourceCurrentCardFace = event.target.parentElement.parentElement.children[1].children[0].getAttribute("src");
+  upCards.push(sourceCurrentCardFace[12]);
   tirada = tirada + 1;
   if (tirada === 2) {
     compare(upCards);
   }
-  console.log(upCards);
-  console.log(returnCards);
 }
 
 var rotateCards = document.querySelectorAll(".rotate-card");
@@ -89,16 +86,13 @@ function compare(variable){
   if (variable[0] === variable[1]) {
     score = score + win;
     correctCouple++;
-    console.log(correctCouple);
     totalScore.innerHTML = score;
     oneScore.innerHTML = win;
     if (correctCouple === 3) {
       var modal = document.querySelector(".modal");
       modal.style.display = "flex";
     }
-    console.log(score);
   }else{
-    console.log(returnCards[0]);
     returnCards[0].style.transform="rotateY(360deg)";
     returnCards[1].style.transform="rotateY(360deg)";
     if (score>=5) {

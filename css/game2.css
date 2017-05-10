@@ -79,6 +79,10 @@
   font-size: 30px;
 }
 
+.total-score-text{
+  font-size: 30px;
+}
+
 .margin-bottom{
   margin-bottom: 20px;
 }
@@ -143,4 +147,44 @@
 
 .reset img{
   width: 60px;
+}
+
+/*MEDIA QUERY*/
+
+@media (min-width: 480px) and (max-width: 780px) {
+  .carta{
+    margin: 0 5px 5px;
+    width: 99.2px;
+    height: 150.4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title{
+    font-size: 30px;
+  }
+  .game{
+    flex-wrap: wrap;
+  }
+  .game-cards{
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+  .carta{
+    width: 86.8px;
+    height: 131.6px;
+  }
+  .score{
+    flex-direction: row;
+  }
+  .total-score{
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 370px) {
+  .carta{
+    width: 78.12px;
+    height: 118.44px;
+  }
 }

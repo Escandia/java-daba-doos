@@ -1,7 +1,7 @@
 var min = 1;
 var max = 100;
 var chances = 0;
-var random = Math.floor(Math.random() * max - min + 1) + min;
+var random = Math.floor(Math.random() * max - min) + min;
 
 function gameNumber(){
 

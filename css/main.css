@@ -72,6 +72,19 @@
 
 /*MEDIA*/
 
+@media (min-width: 1200px) {
+  .game{
+    width: 300px;
+  }
+  .gif{
+    width: 150px;
+    height: 150px;
+  }
+  .text p{
+    font-size: 20px;
+  }
+}
+
 @media (min-width: 480px) and (max-width: 780px) {
   .choose-game{
     font-size: 3em;
